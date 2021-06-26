@@ -6,6 +6,9 @@ Awesome network security tool
 # Scan a single target (sends packets and analyzes servers response)
 nmap thenewboston.com
 
+#sScan with different options
+TCP scan, UDP scan, TCP SYN scan
+
 # Also by IP
 nmap 54.186.250.79
 
@@ -91,6 +94,14 @@ nmap -F -oN Desktop/results.txt thenewboston.com
 cat Desktop/results.txt
 
 ----------
+# UDP port scan
+nmap 192.068.0.1 -sU
+
+# TCP SYN port scan(Default)
+nmap 192.168.1.1 -sS
+
+# TCP ACK port scan
+nmap 192.168.1.1 -sA
 
 # Verbose updates you more in real time
 nmap -v thenewboston.com
